@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import WhatsAppButton from "./components/WhatsappButton";
+// import ModelPortfolioLanding from "./pages/ModelPortfolioLanding";
 import "./index.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <WhatsAppButton/>
+      {/* <ModelPortfolioLanding/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
