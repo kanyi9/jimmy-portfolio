@@ -15,6 +15,21 @@ function Home() {
         <Stats />
       </section>
 
+      <section className="about-section">
+  <h2>About</h2>
+
+  <p>
+    James Ngare Mureithi is a fashion model based in Nairobi, Kenya. 
+    He brings a calm, confident presence to every shoot, with a strong 
+    ability to adapt to creative direction and visual storytelling.
+  </p>
+
+  <p>
+    His work spans fashion editorials, studio portraits, and lifestyle imagery,
+    with a focus on clean aesthetics and expressive movement.
+  </p>
+</section>
+  
       <section className="gallery-section">
         <h2>Portfolio</h2>
         <div className="gallery-grid">

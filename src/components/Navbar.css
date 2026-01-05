@@ -1,23 +1,59 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: white;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-  }
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  .logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Logo typing animation */
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  width: 0;
+  animation: typing 4s steps(23, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 23ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Instagram icon styling */
+.navbar ul li a.instagram {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.navbar ul li a.instagram:hover {
+  color: #E1306C; /* Instagram pink on hover */
+}
