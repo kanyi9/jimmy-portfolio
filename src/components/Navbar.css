@@ -1,5 +1,7 @@
+/* ================= NAVBAR BASE ================= */
 .navbar {
   display: flex;
+  flex-wrap: wrap; /* allow wrapping of content */
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
@@ -7,6 +9,7 @@
   border-bottom: 1px solid #000;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -14,6 +17,9 @@
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* keep links in one row and wrap if needed */
 }
 
 .navbar a {
@@ -26,15 +32,16 @@
   text-decoration: underline;
 }
 
-/* Logo typing animation */
+/* ================= LOGO TYPING ANIMATION ================= */
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
   font-family: monospace;
-  white-space: nowrap;
+  white-space: pre-wrap; /* allow wrapping on small screens */
   overflow: hidden;
-  border-right: 2px solid #000;
-  width: 0;
+  border-right: 2px solid #fff; /* cursor color */
+  width: 100%;
+  max-width: 300px; /* desktop limit */
   animation: typing 4s steps(23, end) forwards, blink 0.75s step-end infinite;
 }
 
@@ -47,13 +54,51 @@
   50% { border-color: transparent; }
 }
 
-/* Instagram icon styling */
+/* ================= INSTAGRAM ICON ================= */
 .navbar ul li a.instagram {
   display: flex;
   align-items: center;
-  color: #f34b4b;
+  color: #f79898;
 }
 
 .navbar ul li a.instagram:hover {
-  color: #E1306C; /* Instagram pink on hover */
+  color: #E1306C;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    max-width: 100%; /* allow full width on mobile */
+  }
+
+  .navbar ul {
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .navbar ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.95rem;
+  }
 }
