@@ -237,7 +237,7 @@ function Home() {
           <img src="/images/17.jpg" alt="Portfolio 7" />
           <img src="/images/18.jpg" alt="Portfolio 8" />
           <img src="/images/19.jpg" alt="Portfolio 9" />
-          <img src="/images/20.jpg" alt="Portfolio 10" />
+          {/* <img src="/images/20.jpg" alt="Portfolio 10" /> */}
           {/* <img src="/images/1.jpg" alt="Portfolio 11" /> */}
           <img src="/images/2.jpg" alt="Portfolio 12" />
           <img src="/images/3.jpg" alt="Portfolio 13" />
