@@ -189,7 +189,7 @@ function Home() {
         {/* Left image */}
         <div className="header-image">
           <img
-            src="/images/5.jpg"  // change to your preferred hero image
+            src="/images/1.jpg"  // change to your preferred hero image
             alt="James Ngare Mureithi"
           />
         </div>
@@ -238,7 +238,7 @@ function Home() {
           <img src="/images/18.jpg" alt="Portfolio 8" />
           <img src="/images/19.jpg" alt="Portfolio 9" />
           <img src="/images/20.jpg" alt="Portfolio 10" />
-          <img src="/images/1.jpg" alt="Portfolio 11" />
+          {/* <img src="/images/1.jpg" alt="Portfolio 11" /> */}
           <img src="/images/2.jpg" alt="Portfolio 12" />
           <img src="/images/3.jpg" alt="Portfolio 13" />
           <img src="/images/4.jpg" alt="Portfolio 14" />
@@ -254,12 +254,12 @@ function Home() {
           <img src="/images/26.jpg" alt="Portfolio 24" />
           <img src="/images/27.jpg" alt="Portfolio 25" />
           <img src="/images/28.jpg" alt="Portfolio 26" />
-          <img src="/images/29.jpg" alt="Portfolio 27" />
+          {/* <img src="/images/29.jpg" alt="Portfolio 27" /> */}
           <img src="/images/30.jpg" alt="Portfolio 28" />
           <img src="/images/31.jpg" alt="Portfolio 29" />
           <img src="/images/32.jpg" alt="Portfolio 30" />
           <img src="/images/33.jpg" alt="Portfolio 31" />
-          <img src="/images/34.jpg" alt="Portfolio 32" />
+          {/* <img src="/images/34.jpg" alt="Portfolio 32" /> */}
           <img src="/images/35.jpg" alt="Portfolio 33" />
           <img src="/images/36.jpg" alt="Portfolio 34" />
         </div>
