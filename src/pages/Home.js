@@ -189,7 +189,7 @@ function Home() {
         {/* Left image */}
         <div className="header-image">
           <img
-            src="/images/2.jpg"  // change to your preferred hero image
+            src="/images/5.jpg"  // change to your preferred hero image
             alt="James Ngare Mureithi"
           />
         </div>
